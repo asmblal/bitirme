@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="552.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facedetectionandmatch.REsimTaraController">
+  <items>
+    <AnchorPane SplitPane.resizableWithParent="false">
+         <children>
+            <HBox layoutX="16.0" layoutY="476.0" prefHeight="36.0" prefWidth="561.0" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="476.0">
+               <children>
+                  <Button fx:id="Taranacakres" layoutX="45.0" layoutY="476.0" mnemonicParsing="false" onAction="#TaranacakResim" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #ae8989;" text="Taranacak Resmi Seç" textAlignment="JUSTIFY" textFill="#eee5e5" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="385.0" AnchorPane.topAnchor="476.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="taratilan" layoutX="230.0" layoutY="476.0" mnemonicParsing="false" onAction="#TaratilanResim" prefHeight="36.0" prefWidth="168.0" style="-fx-background-color: #ae8989;" text="Klasör Seç" textAlignment="JUSTIFY" textFill="#eeebeb" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="476.0" HBox.hgrow="ALWAYS">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="416.0" layoutY="476.0" mnemonicParsing="false" onAction="#tara" prefHeight="36.0" prefWidth="168.0" style="-fx-background-color: #ae8989;" text="Tara" textFill="#fffefe" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="416.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="476.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <ImageView fx:id="taratilanresim" fitHeight="257.0" fitWidth="270.0" layoutX="28.0" layoutY="59.0" pickOnBounds="true" AnchorPane.bottomAnchor="234.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="59.0" />
+            <Label layoutX="373.0" layoutY="14.0" prefHeight="21.0" prefWidth="153.0" text="Bulunan Resim" textFill="#1889b2">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="14.0" prefHeight="21.0" prefWidth="153.0" text="Taranılan Resim" textFill="#3187cd">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="taranacakresim" fitHeight="257.0" fitWidth="270.0" layoutX="15.0" layoutY="59.0" pickOnBounds="true" AnchorPane.bottomAnchor="234.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="313.0" AnchorPane.topAnchor="59.0" />
+            <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#returnhome" prefHeight="43.0" prefWidth="43.0" styleClass="button-home" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

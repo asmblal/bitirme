@@ -1,0 +1,26 @@
+
+.button-bul {
+  -fx-background-image: url("bul.png");
+	-fx-background-repeat: no-repeat;
+ -fx-background-position:center;
+ -fx-background-size: 60px;
+}
+.button-tara {
+  -fx-background-image: url("tara.png");
+	-fx-background-repeat: no-repeat;
+ -fx-background-position: center;
+ -fx-background-size: 64px;
+}
+.button-save {
+  -fx-background-image: url("save.png");
+	-fx-background-repeat: no-repeat;
+ -fx-background-position: center;
+ -fx-background-size: 64px;
+}
+
+.button-home {
+  -fx-background-image: url("home.png");
+	-fx-background-repeat: no-repeat;
+ -fx-background-position: center;
+ -fx-background-size: 43px;
+}

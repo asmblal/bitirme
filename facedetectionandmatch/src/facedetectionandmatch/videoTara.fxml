@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" snapToPixel="false" style="-fx-border-width: 2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facedetectionandmatch.videotaramaController">
+   <children>
+      <Button fx:id="videotara" layoutX="19.0" layoutY="57.0" mnemonicParsing="false" onAction="#videotarama" prefHeight="25.0" prefWidth="80.0" text="Video Seç">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+          <tooltip>
+                <Tooltip text="Lütfen Taramak İstediğiniz Videoyu Seçiniz" />
+            </tooltip>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      
+      </Button>
+      <ImageView fx:id="videogoster" fitHeight="464.0" fitWidth="986.0" layoutX="274.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="eslesen" fitHeight="125.0" fitWidth="125.0" layoutX="274.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="taramayabasla" layoutX="32.0" layoutY="256.0" mnemonicParsing="false" onAction="#Dosyasec" prefHeight="25.0" prefWidth="90.0" text="Aranacaklar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Lütfen Bulmak istediğiniz resimlerin bulunduğu klasörü seçiniz">
+               <font>
+                  <Font name="Comic Sans MS Italic" size="12.0" />
+               </font>
+            </Tooltip>
+         </tooltip></Button>
+      <Label fx:id="label" layoutX="36.0" layoutY="291.0" prefHeight="53.0" prefWidth="161.0" />
+     <Button fx:id="cameraButton" alignment="center" disable="true" layoutX="40.0" layoutY="350.0" onAction="#taramayabasla" text="Tara">
+           <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+          <tooltip>
+                <Tooltip text="This is a button. Click on it." />
+            </tooltip>
+      
+      </Button>
+     <CheckBox fx:id="haarClassifier" layoutX="45.0" layoutY="141.0" onAction="#haarSelected" text="Haar Classifier" />
+				<CheckBox fx:id="lbpClassifier" layoutX="45.0" layoutY="203.0" onAction="#lbpSelected" text="LBP Classifier" />
+      <Label layoutX="48.0" layoutY="121.0" text="Hear Cascade ile yüz bulma" />
+      <Label layoutX="48.0" layoutY="183.0" text="LBP ile yüz bulma" />
+      <Label fx:id="label2" layoutX="24.0" layoutY="96.0" prefHeight="17.0" prefWidth="161.0" />
+      <ImageView fx:id="eslesen1" fitHeight="125.0" fitWidth="125.0" layoutX="402.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="eslesen2" fitHeight="125.0" fitWidth="125.0" layoutX="538.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="11.0" layoutY="8.0" mnemonicParsing="false" onAction="#returnhome" prefHeight="43.0" prefWidth="43.0" styleClass="button-home" />
+   </children>
+</AnchorPane>
